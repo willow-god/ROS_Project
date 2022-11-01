@@ -1,0 +1,18 @@
+<launch>
+	<param name="robot_description" command="$(find learning_communication)/urdf/xacro/toydog.xacro" />
+	<!-- 设置GUI参数,显示关节控制插件 -->
+	<param name="use_gui" value="true"/>
+
+	<!-- 运行joint_state_publisher节点,发布机器人的关节状态 -->
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+	<!-- 运行robot_state_publisher节点,发布TF -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+	
+	
+	<node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" output="screen" />
+
+	<!-- 运行rviz可视化界面 -->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find learning_communication)/config/robot_xacro.rviz" />
+</launch>
+

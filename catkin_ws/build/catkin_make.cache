@@ -1,2 +1,2 @@
-
+learning_communication:myrobot_gazebo
 -DCATKIN_DEVEL_PREFIX=/home/liushen/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/liushen/catkin_ws/install -G Unix Makefiles
