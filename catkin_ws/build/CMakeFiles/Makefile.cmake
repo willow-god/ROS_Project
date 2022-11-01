@@ -15,13 +15,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "learning_communication/catkin_generated/ordered_paths.cmake"
   "learning_communication/catkin_generated/package.cmake"
-  "myrobot_gazebo/catkin_generated/ordered_paths.cmake"
-  "myrobot_gazebo/catkin_generated/package.cmake"
   "/home/liushen/catkin_ws/src/CMakeLists.txt"
   "/home/liushen/catkin_ws/src/learning_communication/CMakeLists.txt"
   "/home/liushen/catkin_ws/src/learning_communication/package.xml"
-  "/home/liushen/catkin_ws/src/myrobot_gazebo/CMakeLists.txt"
-  "/home/liushen/catkin_ws/src/myrobot_gazebo/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"
@@ -184,7 +180,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "learning_communication/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "myrobot_gazebo/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

@@ -18,13 +18,13 @@
     </include>
 
 	<!-- open my world -->
-	<arg name="world_name" value="$(find myrobot_gazebo)/worlds/myrobot.world"/>
+	<arg name="world_name" value="$(find learning_communication)/worlds/myrobot.world"/>
 
     <!-- 导入urdf文件，第一个参数修改为功能包名，第二个参数修改为urdf文件的路径 -->
-    <param name="myrobot_gazebo" command="cat '$(find learning_communication)/urdf/toydog.urdf'" />
+    <param name="learning_communication" command="cat '$(find learning_communication)/urdf/toydog.urdf'" />
 
     <!-- 导入spawn_urdf节点，使Gazebo能够识别urdf文件。需要修改的参数为功能包的路径 -->
-    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param /myrobot_gazebo -urdf -model toydog" />
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param /learning_communication -urdf -model toydog" />
     
   </launch>
 

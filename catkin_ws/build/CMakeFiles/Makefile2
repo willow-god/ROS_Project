@@ -55,14 +55,12 @@ CMAKE_BINARY_DIR = /home/liushen/catkin_ws/build
 # The main recursive "all" target.
 all: gtest/all
 all: learning_communication/all
-all: myrobot_gazebo/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: learning_communication/preinstall
-preinstall: myrobot_gazebo/preinstall
 
 .PHONY : preinstall
 
@@ -74,7 +72,6 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: learning_communication/clean
-clean: myrobot_gazebo/clean
 
 .PHONY : clean
 
@@ -166,24 +163,6 @@ learning_communication/clean: learning_communication/CMakeFiles/roscpp_generate_
 learning_communication/clean: learning_communication/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 .PHONY : learning_communication/clean
-
-#=============================================================================
-# Directory level rules for directory myrobot_gazebo
-
-# Recursive "all" directory target.
-myrobot_gazebo/all:
-
-.PHONY : myrobot_gazebo/all
-
-# Recursive "preinstall" directory target.
-myrobot_gazebo/preinstall:
-
-.PHONY : myrobot_gazebo/preinstall
-
-# Recursive "clean" directory target.
-myrobot_gazebo/clean:
-
-.PHONY : myrobot_gazebo/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
