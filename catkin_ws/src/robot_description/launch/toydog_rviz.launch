@@ -1,5 +1,5 @@
 <launch>
-	<param name="robot_description" textfile="$(find learning_communication)/urdf/toydog.urdf" />
+	<param name="robot_description" textfile="$(find robot_description)/urdf/toydog.urdf" />
 	<!-- 设置GUI参数,显示关节控制插件 -->
 	<param name="use_gui" value="true"/>
 
@@ -10,6 +10,6 @@
 	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
 	<!-- 运行rviz可视化界面 -->
-	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find learning_communication)/config/robot_urdf.rviz" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find robot_description)/config/robot_urdf.rviz" />
 </launch>
 

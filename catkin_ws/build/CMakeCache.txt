@@ -551,6 +551,12 @@ pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
 //The directory containing a CMake configuration file for realtime_tools.
 realtime_tools_DIR:PATH=/opt/ros/noetic/share/realtime_tools/cmake
 
+//Value Computed by CMake
+robot_description_BINARY_DIR:STATIC=/home/liushen/catkin_ws/build/robot_description
+
+//Value Computed by CMake
+robot_description_SOURCE_DIR:STATIC=/home/liushen/catkin_ws/src/robot_description
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
 
