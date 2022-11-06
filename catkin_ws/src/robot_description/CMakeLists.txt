@@ -150,6 +150,10 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
+add_executable(toydog_action src/toydog_action.cpp)
+target_link_libraries(toydog_action ${catkin_LIBRARIES})
+
+
 #############
 ## Install ##
 #############

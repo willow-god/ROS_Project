@@ -428,6 +428,19 @@ std_msgs_generate_messages_cpp/fast:
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named toydog_action
+
+# Build rule for target.
+toydog_action: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 toydog_action
+.PHONY : toydog_action
+
+# fast build rule for target.
+toydog_action/fast:
+	$(MAKE) -f robot_description/CMakeFiles/toydog_action.dir/build.make robot_description/CMakeFiles/toydog_action.dir/build
+.PHONY : toydog_action/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -512,6 +525,7 @@ help:
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... toydog_action"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
