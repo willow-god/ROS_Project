@@ -1,0 +1,3 @@
+<launch>
+<node name="joint1_control" pkg="robot_description" type="joint1_control"/>
+</launch>

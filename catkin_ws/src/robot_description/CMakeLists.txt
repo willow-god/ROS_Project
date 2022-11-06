@@ -8,9 +8,11 @@ project(robot_description)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  gazebo_ros
   roscpp
-  rospy
   std_msgs
+  urdf
+  xacro
 )
 
 ## System dependencies are found with CMake's conventions
@@ -150,8 +152,8 @@ include_directories(
 #   ${catkin_LIBRARIES}
 # )
 
-add_executable(toydog_action src/toydog_action.cpp)
-target_link_libraries(toydog_action ${catkin_LIBRARIES})
+add_executable(joint1_control src/joint1_control.cpp)
+target_link_libraries(joint1_control ${catkin_LIBRARIES})
 
 
 #############
